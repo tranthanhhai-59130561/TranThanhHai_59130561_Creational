@@ -9,6 +9,12 @@ package bt3;
  *
  * @author Admin
  */
-public class Rectangle {
+public class Rectangle extends Shape{
+
+    //implement
+    @Override
+    public String draw() {
+        return "Draw rectangle: " + getBrush() + ", " + getPaper() + ", " + getFrame();    
+    }
     
 }
