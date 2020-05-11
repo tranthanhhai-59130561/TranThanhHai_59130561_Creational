@@ -5,14 +5,14 @@
  */
 package bt1;
 import java.util.ArrayList;
-import java.time.LocalDate;
+
 
 /**
  *
  * @author Admin
  */
 public class HoaDon {
-    HoaDonHeader hoaDonHeader = new HoaDonHeader();
+    HoaDonHeader hoaDonHeader;
     ArrayList<CTHD> dsCT = new ArrayList<>();
     
     public HoaDon(Builder builder) // public static class Builder{} 
@@ -26,18 +26,22 @@ public class HoaDon {
         ArrayList<CTHD> dsCT = new ArrayList<>();
           
         public Builder()
-        {}
-        
+        {
+            this.dsCT = new ArrayList<>();
+        }
+                        
         public Builder addHoaDonHeader(HoaDonHeader hoaDonHeader) {
             this.hoaDonHeader = hoaDonHeader;
             return this;
         }
         
+        // thêm hàng hóa vào dsCT
         public Builder addCTHD(CTHD cthd){
             this.dsCT.add(cthd);
             return this;
         }
         
+        // tao ra 1 hoa don
         public HoaDon build(){
             return new HoaDon(this);
         }
