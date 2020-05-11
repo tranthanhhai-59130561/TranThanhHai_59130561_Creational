@@ -12,9 +12,16 @@ package bt3;
 public class Triangle extends Shape {
     private static Shape triangle;
     
-    protected Triangle() {
-        super("Triangle-brush", "Triangle-paper", "Triangle-frame");
-    };
+    //Constructor
+    public Triangle() {
+    }
+
+    //Constructor
+    public Triangle(String brush, String paper, String frame) {
+        super(brush, paper, frame);
+    }
+    
+    
     
     public static Shape createTriangle() {
         if (triangle == null) {
