@@ -32,7 +32,7 @@ public class Rectangle extends Shape{
     //implement
     @Override
     public String draw() {
-        return "Draw rectangle: " + getBrush() + ", " + getPaper() + ", " + getFrame();    
+        return "Vẽ hình chữ nhật: " + getBrush() + ", " + getPaper() + ", " + getFrame();    
     }
     
 }
