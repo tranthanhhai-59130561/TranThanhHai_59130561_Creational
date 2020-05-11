@@ -12,10 +12,17 @@ package bt3;
 public class Circle extends Shape {
 
     protected static Shape circle;
+
+    //Constructor
+    public Circle() {
+    }
+
+    //Constructor
+    public Circle(String brush, String paper, String frame) {
+        super(brush, paper, frame);
+    }
     
-    protected Circle() {
-        super("Circle-brush", "Circle-paper", "Circle-frame");
-    };
+    
     
     
     public static Shape createCircle() {
@@ -28,7 +35,7 @@ public class Circle extends Shape {
     //implement
     @Override
     public String draw() {
-        return "Draw circle: " + getBrush() + 
+        return "Vẽ hình tròn: " + getBrush() + 
                 ", " + getPaper() + ", " + getFrame();    
     }
     
