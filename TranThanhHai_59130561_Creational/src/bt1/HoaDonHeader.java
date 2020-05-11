@@ -4,21 +4,22 @@
  * and open the template in the editor.
  */
 package bt1;
-import java.time.LocalDate;
+import java.util.Date;
+import java.text.SimpleDateFormat;
 /**
  *
  * @author Admin
  */
 public class HoaDonHeader {
     String maHoaDon;
-    LocalDate ngayBan;
+    Date ngayBan;
     String tenKhachHang;
     
     public HoaDonHeader()
     {}
        
     // Constructor
-    public HoaDonHeader(String maHoaDon, LocalDate ngayBan, String tenKhachHang) 
+    public HoaDonHeader(String maHoaDon, Date ngayBan, String tenKhachHang) 
     {
         this.maHoaDon = maHoaDon;
         this.ngayBan = ngayBan;
@@ -26,7 +27,6 @@ public class HoaDonHeader {
     }
     
     // getter/setter
-
     public String getMaHoaDon() {
         return maHoaDon;
     }
@@ -35,11 +35,11 @@ public class HoaDonHeader {
         this.maHoaDon = maHoaDon;
     }
 
-    public LocalDate getNgayBan() {
+    public Date getNgayBan() {
         return ngayBan;
     }
 
-    public void setNgayBan(LocalDate ngayBan) {
+    public void setNgayBan(Date ngayBan) {
         this.ngayBan = ngayBan;
     }
 
@@ -50,5 +50,15 @@ public class HoaDonHeader {
     public void setTenKhachHang(String tenKhachHang) {
         this.tenKhachHang = tenKhachHang;
     }
+
+    // toString
+    @Override
+    public String toString() {
+        return "HoaDonHeader{" + "mã hóa đơn = " + maHoaDon + 
+                ", ngày bán = " + ngayBan + ", tên khách hàng = " 
+                + tenKhachHang + '}';
+    }
+    
+    
                  
 }
