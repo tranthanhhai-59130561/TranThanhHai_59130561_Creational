@@ -15,6 +15,17 @@ public class mainBT3 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        System.out.println("Hello HIHI");
+        ShapeFactory sF = new ShapeFactory();
+        Shape shapeRect = sF.createShape(ShapeType.rectangle);
+        Shape shapeCir = sF.createShape(ShapeType.circle);
+        Shape shapeTri = sF.createShape(ShapeType.triangle);
+        
+        // test singleton
+        Shape shapeRect1 = sF.createShape(ShapeType.rectangle);
+        shapeRect1.setBrush("new Rectangle-brush");
+        
+        System.out.println(shapeRect.draw());
+        System.out.println(shapeCir.draw());
+        System.out.println(shapeTri.draw());
     }
 }
