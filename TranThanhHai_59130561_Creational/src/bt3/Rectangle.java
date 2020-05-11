@@ -12,11 +12,17 @@ package bt3;
 public class Rectangle extends Shape{
 
     private static Shape rectangle;
-    
-    protected Rectangle() {
-        super("Rectangle-brush", "Rectangle-paper", "Rectangle-frame");
+
+    //Constructor
+    public Rectangle() {
     }
+    //Constructor
+    public Rectangle(String brush, String paper, String frame) {
+        super(brush, paper, frame);
+    }
+
     
+       
     public static Shape createRectangle() {
         if (rectangle == null) {
             rectangle = new Rectangle();
