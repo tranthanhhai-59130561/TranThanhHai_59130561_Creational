@@ -9,6 +9,11 @@ package bt3;
  *
  * @author Admin
  */
-public class Triangle {
+public class Triangle extends Shape {
+
+    @Override
+    public String draw() {
+        return "Draw triangle: " + getBrush() + ", " + getPaper() + ", " + getFrame();
+    }
     
 }
