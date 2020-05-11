@@ -32,7 +32,7 @@ public class Triangle extends Shape {
     
     @Override
     public String draw() {
-        return "Draw triangle: " + getBrush() + ", " + getPaper() + ", " + getFrame();
+        return "Vẽ tam giác: " + getBrush() + ", " + getPaper() + ", " + getFrame();
     }
     
 }
