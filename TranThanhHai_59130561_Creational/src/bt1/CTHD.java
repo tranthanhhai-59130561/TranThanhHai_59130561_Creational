@@ -13,16 +13,15 @@ public class CTHD {
     String sanPham;
     int soLuong;
     double donGia;
-    float chiecKhau;
+    double chiecKhau;
     
     // constructor
-    public CTHD(String sanPham, int soLuong, double donGia, float chiecKhau) {
+    public CTHD(String sanPham, int soLuong, double donGia, double chiecKhau) 
+    {
         this.sanPham = sanPham;
         this.soLuong = soLuong;
         this.donGia = donGia;
-        this.chiecKhau = chiecKhau;
-        
-        
+        this.chiecKhau = chiecKhau;                
     }
     // getter/setter
     public String getSanPham() {
@@ -49,13 +48,21 @@ public class CTHD {
         this.donGia = donGia;
     }
 
-    public float getChiecKhau() {
+    public double getChiecKhau() {
         return chiecKhau;
-    }
+    }    
 
-    public void setChiecKhau(float chiecKhau) {
+    public void setChiecKhau(double chiecKhau) {
         this.chiecKhau = chiecKhau;
     }
     
+    //toString
+    @Override
+    public String toString() {
+        return "CTHD {" + "sản phẩm = " + sanPham + ", "
+                + "số lượng = " + soLuong + 
+                ", đơn giá = " + donGia + ", chiếc khấu = " +
+                chiecKhau + '}';
+    }
     
 }
