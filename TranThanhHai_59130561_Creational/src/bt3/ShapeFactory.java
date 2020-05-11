@@ -12,7 +12,7 @@ package bt3;
 public class ShapeFactory {
     public Shape createShape(ShapeType shapeType) 
     {
-        if (null != shapeType) switch (shapeType) {
+        switch (shapeType) {
             case rectangle:
                 return Rectangle.createRectangle();
             case circle:
