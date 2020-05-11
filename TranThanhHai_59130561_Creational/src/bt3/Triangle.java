@@ -10,7 +10,19 @@ package bt3;
  * @author Admin
  */
 public class Triangle extends Shape {
-
+    private static Shape triangle;
+    
+    protected Triangle() {
+        super("Triangle-brush", "Triangle-paper", "Triangle-frame");
+    };
+    
+    public static Shape createTriangle() {
+        if (triangle == null) {
+            triangle = new Triangle();
+        }
+        return triangle;
+    }
+    
     @Override
     public String draw() {
         return "Draw triangle: " + getBrush() + ", " + getPaper() + ", " + getFrame();
