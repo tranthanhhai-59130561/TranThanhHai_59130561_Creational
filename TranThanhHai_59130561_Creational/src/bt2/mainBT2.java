@@ -16,10 +16,11 @@ public class mainBT2 {
     public static void main(String[] args) {
         // TODO code application logic here
         
-        MyStringBuilder str = new MyStringBuilder()
-                .addString("Trần Thanh Hải")
-                .addString("59130561")
+        MyStringBuilder str = new MyStringBuilder("- ")
+                .addString("Trần Thanh Hải | ")
+                .addString("59130561 | Điểm: ")
                 .addFloat(7.0f)
+                .addString(" | Môn MTK: ")
                 .addBool(true);
         System.out.println(str.toString());               
     }
