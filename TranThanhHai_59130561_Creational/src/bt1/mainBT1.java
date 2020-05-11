@@ -22,12 +22,18 @@ public class mainBT1 {
         // TODO code application logic here
         SimpleDateFormat formatDate = new SimpleDateFormat("dd/MM/yyyy");
         
+        HoaDonHeader hoaDonHeader = new HoaDonHeader("HD01", formatDate.parse("31/3/1999"), "Trần Thanh Hải");
+        CTHD cthd1 = new CTHD("Ram 16 GB", 2, 1800000, 12);
+        CTHD cthd2 = new CTHD("Ram 4 GB", 4, 1700000, 15);
+        CTHD cthd3 = new CTHD("Ram 32 GB", 1, 3500000, 12);
+        CTHD cthd4 = new CTHD("Ram 8 GB", 3, 2300000, 10);
+        
         HoaDon hoaDon = new HoaDon.Builder()
-                            .addHoaDonHeader(new HoaDonHeader("HD01", formatDate.parse("31/3/1999"), "Trần Thanh Hải"))
-                            .addCTHD(new CTHD("Ram 16 GB", 2, 1800000, 12))
-                            .addCTHD(new CTHD("Ram 4 GB", 4, 1700000, 15))
-                            .addCTHD(new CTHD("Ram 32 GB", 1, 3500000, 12))
-                            .addCTHD(new CTHD("Ram 8 GB", 3, 2300000, 10))
+                            .addHoaDonHeader(hoaDonHeader)
+                            .addCTHD(cthd1)
+                            .addCTHD(cthd2)
+                            .addCTHD(cthd3)
+                            .addCTHD(cthd4)
                             .build();
         System.out.println(hoaDon.toString());
     }
