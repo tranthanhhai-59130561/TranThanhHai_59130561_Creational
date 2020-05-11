@@ -10,5 +10,11 @@ package bt3;
  * @author Admin
  */
 public class Shape {
+    private String brush;
+    private String paper;
+    private String frame;
     
+    protected Shape()
+    {}
+            
 }
