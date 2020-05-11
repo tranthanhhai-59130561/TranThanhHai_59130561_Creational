@@ -9,6 +9,6 @@ package bt3;
  *
  * @author Admin
  */
-public class ShapeType {
-    
+public enum ShapeType {
+    rectangle, circle, triangle;
 }
