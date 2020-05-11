@@ -10,8 +10,11 @@ package bt2;
  * @author Admin
  */
 public class MyStringBuilder {
+    //str: Thuộc tính có kiểu String.
     String str;
 
+    public MyStringBuilder()
+    {}
     // constructor
     public MyStringBuilder(String str) {
         this.str = str;
@@ -38,6 +41,7 @@ public class MyStringBuilder {
         return this;
     }
 
+    //Phương thức toString() trả về chuỗi str đã được xây dựng.
     @Override
     public String toString() {
         return str;
