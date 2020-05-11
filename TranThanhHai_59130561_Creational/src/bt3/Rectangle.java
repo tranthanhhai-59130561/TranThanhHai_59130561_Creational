@@ -11,6 +11,18 @@ package bt3;
  */
 public class Rectangle extends Shape{
 
+    private static Shape rectangle;
+    
+    protected Rectangle() {
+        super("Rectangle-brush", "Rectangle-paper", "Rectangle-frame");
+    }
+    
+    public static Shape createRectangle() {
+        if (rectangle == null) {
+            rectangle = new Rectangle();
+        }
+        return rectangle;
+    }
     //implement
     @Override
     public String draw() {
