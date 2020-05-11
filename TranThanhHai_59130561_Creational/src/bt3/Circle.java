@@ -11,10 +11,25 @@ package bt3;
  */
 public class Circle extends Shape {
 
+    protected static Shape circle;
+    
+    protected Circle() {
+        super("Circle-brush", "Circle-paper", "Circle-frame");
+    };
+    
+    
+    public static Shape createCircle() {
+        if (circle == null) {
+            circle = new Circle();
+        }
+        return circle;
+    }
+    
     //implement
     @Override
     public String draw() {
-        return "Draw circle: " + getBrush() + ", " + getPaper() + ", " + getFrame();    
+        return "Draw circle: " + getBrush() + 
+                ", " + getPaper() + ", " + getFrame();    
     }
     
 }
