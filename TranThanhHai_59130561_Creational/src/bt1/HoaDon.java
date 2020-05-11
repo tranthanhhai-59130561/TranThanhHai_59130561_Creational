@@ -46,7 +46,9 @@ public class HoaDon {
             return new HoaDon(this);
         }
 
-        //toString
+    }
+    
+    //toString
         @Override
         public String toString() {
             String s = hoaDonHeader.toString();
@@ -55,7 +57,5 @@ public class HoaDon {
             }
             return s;
         }
-                 
-    }
     
 }
