@@ -25,7 +25,30 @@ public class HoaDonHeader {
         this.tenKhachHang = tenKhachHang;
     }
     
-    
-    
-    
+    // getter/setter
+
+    public String getMaHoaDon() {
+        return maHoaDon;
+    }
+
+    public void setMaHoaDon(String maHoaDon) {
+        this.maHoaDon = maHoaDon;
+    }
+
+    public LocalDate getNgayBan() {
+        return ngayBan;
+    }
+
+    public void setNgayBan(LocalDate ngayBan) {
+        this.ngayBan = ngayBan;
+    }
+
+    public String getTenKhachHang() {
+        return tenKhachHang;
+    }
+
+    public void setTenKhachHang(String tenKhachHang) {
+        this.tenKhachHang = tenKhachHang;
+    }
+                 
 }
