@@ -9,6 +9,12 @@ package bt3;
  *
  * @author Admin
  */
-public class Circle {
+public class Circle extends Shape {
+
+    //implement
+    @Override
+    public String draw() {
+        return "Draw circle: " + getBrush() + ", " + getPaper() + ", " + getFrame();    
+    }
     
 }
